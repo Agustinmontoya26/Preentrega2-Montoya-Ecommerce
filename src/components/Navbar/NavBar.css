@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #dd0000;
+  padding: 0.5rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+header .navbar ul li :link {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #e2c19b;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .navbar ul li :link:hover {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.active{
+  color: rgb(231, 231, 231);
+}
