@@ -20,7 +20,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #dd0000;
+  background: #ce2c2c;
+  text-decoration: none;
   padding: 0.5rem 9%;
   display: flex;
   align-items: center;
@@ -28,8 +29,16 @@ header {
 }
 header .logo {
   font-size: 2rem;
-  color: #ffffff;
+  color: #fff;
   font-weight: bolder;
+  background-color: transparent;
+}
+
+.logoName {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -40,21 +49,21 @@ header .logo {
   text-decoration: none;
 }
 
-header .navbar ul li :link {
+header .navbar ul li .linkCateg {
   font-size: 2rem;
   padding: 0 1.5rem;
-  color: #e2c19b;
+  color: #000000;
   text-transform: uppercase;
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
 }
 
-header .navbar ul li :link:hover {
-  color: #ffff;
+header .navbar ul li .linkCateg:hover {
+  color: #ffffff;
   text-decoration: none;
 }
 
 .active{
-  color: rgb(231, 231, 231);
+  color: red;
 }

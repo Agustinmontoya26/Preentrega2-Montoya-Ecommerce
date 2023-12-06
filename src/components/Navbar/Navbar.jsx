@@ -1,36 +1,41 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
-import { Link, NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <header>
-      <button className="logo">
-        <img src="./public/logoo.png" alt="" width="85px" height="100px" />
+    <button className="logo">
+        <img src="https://seeklogo.com/images/G/gold_s_gym_2008-logo-5B7A8ECB44-seeklogo.com.png" alt="" width="85px" height="100px" />
       </button>
-      <h1 className="logo">Build-UR-Life</h1>
+      <h1 className="logoName">Build-UR-Life</h1>
       <nav className="navbar">
-        <ul>
-          <li>
-            <NavLink activeclassname="active" to={`category/women's-clothing`}>Mujer</NavLink>
+      <ul>
+        <li>
+        <Link className="linkCateg" to="/">Catálogo</Link>
           </li>
           <li>
-            <NavLink activeclassname="active" to="/category/men's-clothing">Hombre</NavLink>
+          <Link className="linkCateg" to="/categoria/proteinas">Proteinas</Link>
           </li>
           <li>
-            <NavLink activeclassname="active" to='/category/electronics'>Electrónico</NavLink>
+          <Link className="linkCateg" to="/categoria/preentrenos">Preentrenos</Link>
           </li>
           <li>
-            <NavLink activeclassname="active" to='/category/jewelery'>Accesorio</NavLink>
+          <Link className="linkCateg" to="/categoria/comestibles">Comestibles</Link>
           </li>
           <li>
-            <CartWidget />
+          <Link className="linkCateg" to="/categoria/accesorio">Accesorios</Link>
+          </li>
+          <li>
+          <Link className="linkCateg" to="/cart">
+            <CartWidget/>
+            </Link>
           </li>
         </ul>
       </nav>
-      
-    </header>
-  );
+  </header>
+  )
 }
 
-export default Navbar;
+export default NavBar
